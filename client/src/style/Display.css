@@ -1,0 +1,58 @@
+body {
+  background-color: #f9a04e;
+}
+
+
+/*------------- Intro Section ----------------*/
+.intro {
+  background-color: #fce373;
+  padding: 50px;
+}
+
+
+/*------------- Image Display Section ----------------*/
+.images-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  background-color: #f9a04e;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.img-container {
+  background-color: #9dcf91;
+  padding: 15px;
+  margin: 50px 15px;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
+  transition: .5s ease;
+}
+
+.column img:hover{
+  opacity:0.4;
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+/* @media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+} */
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+} */

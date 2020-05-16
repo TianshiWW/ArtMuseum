@@ -1,0 +1,30 @@
+.body {
+  background-color: #f9a04e;
+}
+
+.img-row-container {
+  background-color: #a385bd;
+  padding-top:20px;
+  padding-bottom: 60px;
+}
+
+.img-row {
+  height: 300px;
+  margin:0;
+  overflow: hidden;
+  padding: 20px 5px;
+}
+
+.time-div {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.img-row img{
+  width:100%;
+}
+
+
+.img-col :hover img{
+  filter: blur(2px) brightness(60%);
+}

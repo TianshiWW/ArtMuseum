@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700,900|Ubuntu:400,500,700");
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-color: #9dcf91;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+
+p{
+  color: #8f8f8f;
+}
+
+/* Navigation bar */
+/* .wrapper {
+    display: flex;
+    flex-direction: row;
+} */
+
+/* --------------------- The side navigation menu -------------------------*/
+
+/* sidebar - fixed */
+.sidenav-fixed {
+  height: 100%; /* 100% Full-height */
+  width: 48px;
+  position: fixed; /* Stay in place */
+  z-index: 2;
+  top: 0; /* Stay at the top */
+  background-color: #231f20; /* light Black*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidenav-fixed .sidenav-icon {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sidenav-fixed .sidenav-icon button {
+  background-color: #231f20;
+  color: #fce373;
+  border: none;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 23px;
+}
+
+.sidenav-fixed .sidenav-icon button:hover{
+  color: #cca69a;
+}
+
+.sidenav-fixed .sidenav-icon .btn-search {
+  margin-left: 5px;
+  color: #231f20;
+  background-color: #fce373;
+  border: 3px solid #231f20;
+  font-size: 25px;
+  padding: 5px 12px;
+  position: relative;
+  z-index: 3;
+}
+
+.sidenav-fixed .sidenav-icon .btn-search:hover {
+  background-color:  #cca69a;
+  color: #231f20;
+}
+
+/* sidebar - push & pop */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 48px;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* sidebar - push */
+#sidebar-push {
+  display: flex;
+  text-align: center;
+}
+
+#sidebar-push .side-menu {
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  top:0;
+  background-color: #a385bd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#sidebar-push .side-menu .menu-text{
+  width: 80px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  /* font-weight: bold; */
+  transition: 0.3s;
+}
+
+#sidebar-push .side-menu .menu-text:hover {
+  color: #fce373 ;
+}
+
+
+#sidebar-push button {
+  background-color: #a385bd;
+  border: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+#sidebar-push button:hover {
+  color: #fce373 ;
+}
+
+#sidebar-push .side-content {
+  background-color: #231f20;
+  height:100%;
+  width: 170px;   /* 250px in total for pushed sidebar*/
+  position: absolute;
+  top:0;
+  left:80px;
+}
+
+/* The navigation menu links */
+.sidenav .content-text {
+  text-align: center;
+  margin: 10px 0px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav .content-text:hover {
+  color: #fff;
+}
+
+
+
+/* sidebar - pop */
+#sidebar-pop-like {
+  padding-top: 0;
+}
+
+#sidebar-pop-popular {
+  padding-top: 0;
+}
+
+.side-image-div {
+  overflow: hidden;
+  background-color: #a385bd;
+}
+
+.side-img-container {
+  width: 430px;
+  margin: 20px 10px 0;
+  padding: 0px 10px;
+}
+
+.side-img-container img {
+  width: 100%;
+}
+
+
+/* --------------------- Main Part -------------------------*/
+
+/* Main part */
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  margin-left: 48px;
+}
+
+/* Top navbar */
+.TopNavbar {
+  height: 65px;
+  background-color: #fce373;
+}
+
+.TopNavbar .home {
+  display: inline;
+  position: relative;
+  top: 20px;
+  font-size: 1.2rem;
+  style:bold;
+}
+
+.TopNavbar .link {
+  color: #231f20;
+}
+
+.TopNavbar .login {
+  display: inline;
+  position: absolute;
+  top: 20px;
+  right:30px;
+}
+
+
+/* Header */
+.welcome-section {
+  background-color: #fce373;
+  color: rgba(#161514, 0.92);
+  height: 380px;
+}
+
+.welcome-row {
+  position:relative;
+  top:20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.big-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* black */
+  font-size: 8rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.welcome-btn {
+  position:relative;
+  top: 20px;
+}
+
+
+/* Middle Section - sliding images*/
+.sliding-section{
+  background-color: #cca69a;
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+  /* width:1104px; */
+  height: 450px;
+}
+
+.sliding-section ul{
+  position: absolute;
+  left:0;
+  top: 70px;
+}
+
+.sliding-section ul li {
+  background-color: #9dcf91;
+  list-style: none;
+  width: 380px;
+  float: left;
+  padding: 20px;
+  margin: 0 15px;
+}
+
+.sliding-section ul li img {
+  width: 100%;
+}
+
+.clear {
+  clear: none;
+}
+
+/* container */
+.container-fluid{
+  padding: 7% 15%;
+}
+
+
+
+/* bottom section */
+.newsletter {
+  background-color: #fff;
+}
+
+.newsletter form {
+  margin-top: 30px;
+}
+
+.newsletter label {
+  margin: 20px;
+}
+
+
+/* footer */
+.footer {
+  background-color: #fce373;
+}
+.footer-icon{
+  margin: 20px 10px;
+}

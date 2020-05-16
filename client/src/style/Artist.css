@@ -1,0 +1,79 @@
+body {
+  background-color: #f9a04e;
+}
+
+
+/*------------- Intro Section ----------------*/
+.intro {
+  background-color: #fce373;
+  padding: 50px;
+}
+
+
+/*------------- Image Display Section ----------------*/
+.images-grid {
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding: 0 10px;
+  background-color: #f9a04e;
+  overflow: hidden;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-4 {
+  flex: 25%;
+  padding: 0 4px;
+  overflow: hidden;
+}
+
+.img-wrap {
+  background-color: #fce373;
+  margin: 10px 5px;
+  overflow: hidden;
+  /* display: flex;
+  justify-content: center; */
+  border-radius: 2%;
+}
+
+.img-wrap .img-text {
+  position:absolute;
+  margin-top: 15px;
+  margin-left: 10px;
+  color:#fff;
+  opacity: 1;
+  width:20%;
+  transition: .5s ease;
+  z-index: 23
+}
+
+.img-wrap img {
+  /* vertical-align: middle; */
+  width: 100%;
+  transition: .5s ease;
+}
+
+
+.img-wrap :hover img{
+  filter: blur(2px) brightness(60%);
+}
+
+.img-wrap :hover .img-text {
+  opacity: 1;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+/* @media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+} */
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+} */
