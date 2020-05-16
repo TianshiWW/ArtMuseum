@@ -16,11 +16,11 @@ module.exports = {
   // password      : "mypassword",
   // connectString : "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=cis550proj.cji2ugkx8gnr.us-east-1.rds.amazonaws.com)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=ARTDB)))"
 
-  host: "cis550proj.cvh2n4yqrctx.us-east-1.rds.amazonaws.com",
-  user: "admin",
-  password: "mypassword",
-  database: "MUSEUMDB",
-  port:1521
+  host: "",
+  user: "",
+  password: "",
+  database: "",
+  port:
 
 };
 
